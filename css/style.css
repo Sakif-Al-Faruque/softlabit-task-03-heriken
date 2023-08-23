@@ -65,7 +65,7 @@ header nav{
 }
 
 .nav-container .nav-search form input{
-    width: 90%;
+    width: calc(100% - 80px);
     border: none;
     outline: none;
     padding: 10px 5px;
@@ -166,6 +166,7 @@ header nav{
     display: flex;
     padding: 40px 0;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .banner-content .banner-headline{
@@ -205,6 +206,7 @@ header nav{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    min-width: 200px;
 }
 .banner-subscribe-bar > form .input-box input{
     background-color: transparent;
@@ -246,7 +248,7 @@ main{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 .benefit-item{
     width: 25%;
@@ -312,6 +314,7 @@ footer{
 .footer-body{
     padding: 50px 0;
     display: flex;
+    flex-wrap: wrap;
 }
 .footer-body .footer-body-item{
     width: 25%;
@@ -441,6 +444,7 @@ footer{
     color: #fff;
     border: 1px solid #70C333;
     background-color: #70C333;
+    z-index: 1000;
 }
 .fix-item-box span{
     display: block;
@@ -452,6 +456,115 @@ footer{
 .fix-item-box span:last-child{
     background-color: #fff;
     color: #70C333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1060px){
+
+
+    .benefit-item{
+        margin-bottom: 50px;
+        width: 50%;
+    }
+    .footer-body .footer-body-item{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    
+
+}
+
+@media (max-width: 740px){
+
+
+    .benefit-item{
+        margin-bottom: 50px;
+        width: 50%;
+    }
+    .footer-body .footer-body-item{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .nav-container{
+        flex-direction: column;
+    }
+
+    .nav-container .page-logo,
+    .nav-container .nav-search,
+    .nav-container .nav-links-container{
+        width: 100%;
+    }
+    .nav-container .page-logo{
+        text-align: center;
+    }
+
+
+    .nav-links-container ul{
+        display: block;
+        text-align: center;
+    }
+    .nav-links-container ul li{
+        display: inline;
+
+    }
+    
+    .banner-container{
+        padding: 300px 0 100px 0;
+    }
+
+
+
+    .banner .banner-container .banner-content{
+        flex-direction: column;
+    }
+
+
+    .banner-content .banner-headline{
+        width: 100%;
+        margin: 20px;
+        text-align: center;
+    }
+    .banner-content .banner-subscribe-bar{
+        width: 100%;
+    }
+
+    .banner-subscribe-bar > form {
+        margin-right: 0;
+        width: 70%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .benefit-item{
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .footer-body .footer-body-item{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+
+
 }
 
 
